@@ -19,12 +19,15 @@ body {
   .header-sp h2 {
     font-family: "Gill Sans Std Book", sans-serif;
     font-size: 13px;
+    font-weight: normal;
+    margin-left: 20px;
   }
   .header-sp img {
     width: 13px;
     height: 10px;
     position: absolute;
-    right: 20px;
+    right: 30px;
+    top: 15px;
   }
   .header-container {
     display: block;
@@ -199,15 +202,16 @@ p.concept-sitelogo {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-@media (max-width: 767px) {
-  .prodact-page {
-    width: 100%;
-  }
-}
+
 .prodact-page {
   width: 800px;
   margin: 0 auto;
   background-color: #fff;
+}
+@media (max-width: 767px) {
+  .prodact-page {
+    width: 100%;
+  }
 }
 .prodact-top, .news-top {
   display: flex;
@@ -249,6 +253,13 @@ p.concept-sitelogo {
   background-position: 0 bottom;
   padding-bottom: 17px;
   margin-right: auto;
+  margin-left: 50px;
+}
+@media (max-width: 767px) {
+  .prodact h1, .news h1 {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -294,14 +305,15 @@ article h2 {
   line-height: 1.5em;
 }
 
+
 .news {
-  width: 80%;
+  width: 800px;
   margin: 100px auto;
   background-color: #F6F6F6;
 }
 @media (max-width: 767px) {
   .news {
-
+    width: 100%;
   }
 }
 
@@ -313,10 +325,10 @@ article h2 {
   .news-container {
     width: 100%;
     height: auto;
-    margin: 0 auto;
   }
   .news-article {
     display: block;
+    margin-left: 100px;
   }
   .news-description p {
     display: none;
@@ -325,7 +337,12 @@ article h2 {
     width: 411px;
     height: auto;
   }
+  .news-description h3 {
+    margin-left: -30px;
+  }
 }
+
+
 .news-article a:hover{
   opacity: 0.7;
   transition: .3s;
